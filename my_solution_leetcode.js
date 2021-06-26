@@ -19,7 +19,6 @@ MyStack.prototype.push = function(x) {
  * @return {number}
  */
 MyStack.prototype.pop = function() {
-    // const [...rest, last] = this.queue
     const last = this.queue[this.queue.length - 1]
     this.queue = this.queue.slice(0, this.queue.length - 1)
     return last
